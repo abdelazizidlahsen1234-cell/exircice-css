@@ -1,74 +1,223 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    max-width: 60%;
+/*body style*/
+body  {
+    font-family: Arial, sans-serif;
+    max-width: 1015px;
+    padding: 20px;
     margin: auto;
 }
 
-header{
+/* header style*/
+header {
     display: flex;
-    align-items: center;
+    padding: 10px 0;
+    text-align: center;
     justify-content: space-between;
 }
 
-.logo img{
-    display: flex;
-    width: 150PX;
-    right: 150px;
-}
-
-.navbar{
-    font-display: flex;
-    padding: 10px 20px;
-}
-
-.nav-links{
+/* navigation-bar style*/
+.navigation-bar .nav-links{
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 20px;
 }
 
-.nav-links li a{
-    display: flex;
+/* nav-links style*/
+.nav-links li a {
     text-decoration: none;
-    color: rgb(184, 177, 177);
-    font-size: 18px; 
+    color: rgb(175, 169, 169);
+    font-size: 16px;
 }
 
-span{
-    color: rgb(0 195 165);;
+/* nav-links li a:hover*/
+.nav-links li a:hover {
+    color:rgb(0 195 165);
 }
 
-.nav-links li a:hover{
-    color: rgb(7, 177, 35);
-}
-
-main{
-    display: inline-block;
-    margin-top: 45px;
-}
-
-.hero img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px; 
-}
-.title h1{
+/* section-hero style*/
+.section-logo {
     display: flex;
-    margin-top: 30px;
     justify-content: center;
+    align-items: center;
+    height: 120px;
+    padding-right: 30px;
+}
+
+/*section-heading style*/
+.section-heading .heading {
+    text-align: center;
+    color: rgb(0 195 165); 
+}
+
+/*section-paragraph style*/
+.section-paragraph  {
+    display: flex;
+    gap: 25px;
+    color: rgb(104, 103, 103);
+    margin-top: 10px;
+}
+
+/*section-paragraph les-paragraph style*/
+.section-paragraph p {
+    line-height: 1.6;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+/*section-carts style*/
+.section-carts {
+    display: flex;;
+    margin-top: 50px;
+
+}
+
+/*section-carts cart style*/
+.section-carts .cart1,
+.cart2,
+.cart3 {
+    padding: 30px 20px;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+
+/*section-carts cart1 style*/
+.section-carts .cart1{
+    background-color: rgb(0 195 165);
+    color: white;
+    margin-right: 20px;
+   
+}
+
+/*section-carts cart1 h3 style*/
+.section-carts .cart1 h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*section-carts cart1 select style*/
+.section-carts .cart1 select {
+    padding: 8px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 70px;
+    background: transparent;
+    color: white;
+}
+
+/*section-carts cart2 style*/
+.section-carts .cart2{
+    background-color: rgb(97, 36, 210);
+    color: white;
+    margin-right:  20px;
+   
+}
+
+/*section-carts cart2 h3 style*/
+.section-carts .cart2 h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*section-carts cart2 select style*/
+.section-carts .cart2 select {
+    padding: 8px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 70px;
+    background: transparent;
+    color: white;
+}
+
+/*section-carts cart3 style*/
+.section-carts .cart3{
+    background-color: rgb(3, 10, 9);
+    color: white;
+   
+}
+
+/*section-carts cart3 h3 style*/
+.section-carts .cart3 h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*section-carts cart3 select style*/
+.section-carts .cart3 select {
+    padding: 8px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 70px;
+    background: transparent;
+    color: white;
+}
+
+/*section-image-links style*/
+.section-image-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+/*section-image-links  div-heading style*/
+.section-image-links .div-heading {
+    width: 46%;
+    color:  rgb(0 195 165);
+    padding-right: 1em;
+}
+
+/*section-image-links image-links style*/
+.section-image-links .image-links img {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/*section-hero style*/
+.section-hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-image: linear-gradient(-45deg, #00ccb103 5%, #3dc7df1a);
+}
+
+/*section-hero heading-p style*/
+.section-hero .heading-p h1 {
+    padding: 40px 20px;
+    color: rgb(0 195 165);
+    max-width: 400%;
+}
+
+/* div-carts style*/
+.div-carts {
+    display: grid;
+    grid-template-columns: repeat(2, 1 fr);
+    gap: 20px;
+    max-width: 800px;
+    margin:  0 auto;
+    
+}
+
+/* div-carts cart style*/
+.div-carts .cart {
+    padding: 20px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/*heading-flooter style*/
+.heading-flooter {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
     color: rgb(0 195 165);
 }
 
-.paragraph{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 45px;
-    gap: 30px;
+/*heading-flooter p style*/
+.heading-flooter p {
+    margin-top: 10px;
+    color: rgb(104, 103, 103);
 }
