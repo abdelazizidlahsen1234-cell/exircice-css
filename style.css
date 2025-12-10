@@ -73,7 +73,6 @@ header {
 .section-carts {
     display: flex;;
     margin-top: 50px;
-
 }
 
 /*section-carts cart style*/
@@ -82,7 +81,9 @@ header {
 .cart3 {
     padding: 30px 20px;
     justify-content: space-between;
+    align-items: center;
     border-radius: 16px;
+    width: 33%;
 }
 
 /*section-carts cart1 style*/
@@ -98,14 +99,21 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/*section-carts cart1 p style*/
+.section-carts .cart1 p {
+    margin-top: 20px;
+    font-size: 32px;
+}
 /*section-carts cart1 select style*/
 .section-carts .cart1 select {
     padding: 8px;
     border: none;
     margin-top: 50px;
-    margin-left: 70px;
+    margin-left: 27px;
     background: transparent;
     color: white;
+    font-size: 25px;
 }
 
 /*section-carts cart2 style*/
@@ -121,12 +129,20 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/*section-carts cart2 p style*/
+.section-carts .cart2 p {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
 /*section-carts cart2 select style*/
 .section-carts .cart2 select {
     padding: 8px;
     border: none;
-    margin-top: 50px;
-    margin-left: 70px;
+    margin-top: 85px;
+    margin-left: 27px;
+    font-size: 25px;
     background: transparent;
     color: white;
 }
@@ -143,12 +159,20 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/*section-carts cart3 p style*/
+.section-carts .cart3 p {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
 /*section-carts cart3 select style*/
 .section-carts .cart3 select {
     padding: 8px;
     border: none;
     margin-top: 50px;
-    margin-left: 70px;
+    margin-left: 27px;
+    font-size: 25px;
     background: transparent;
     color: white;
 }
@@ -178,6 +202,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    padding: 40px 40px;
     background-image: linear-gradient(-45deg, #00ccb103 5%, #3dc7df1a);
 }
 
@@ -190,21 +215,36 @@ header {
 
 /* div-carts style*/
 .div-carts {
-    display: grid;
-    grid-template-columns: repeat(2, 1 fr);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     max-width: 800px;
-    margin:  0 auto;
-    
+    margin:  0 auto; 
 }
 
 /* div-carts cart style*/
 .div-carts .cart {
     padding: 20px;
-    border-radius: 16px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 250px;
+    height: 260px;
+}
+
+/* div-carts cart h3 style*/
+.div-carts .cart h3 {
+    margin-top: 15px;
+    margin-bottom: 36px;
+    font-size: 30px;
+}
+
+/* div-carts cart p style*/
+.div-carts .cart p {
+    color: rgb(104, 103, 103);
+    font-size: 11px;
 }
 
 /*heading-flooter style*/
@@ -220,4 +260,103 @@ header {
 .heading-flooter p {
     margin-top: 10px;
     color: rgb(104, 103, 103);
+}
+
+/* les-carts-photos style*/
+.les-carts-photos .carts-photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 80px;
+
+}
+
+/* les-carts-photos photo style*/
+.les-carts-photos .photo {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* les-carts-photos photo figure img style*/
+.les-carts-photos .photo figure img {
+    width: 308px;
+    height: 270px;
+}
+
+/* les-carts-photos .carts-photos a style*/
+.les-carts-photos .carts-photos a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 0;   
+}
+
+/* les-carts-photos .carts-photos a div style*/
+.les-carts-photos .carts-photos a div {
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+
+/* les-carts-photos .carts-photos a div span style*/
+.les-carts-photos .carts-photos a div span {
+    color: rgb(249, 255, 254);
+    background-color: blue;
+    border-radius: 6px ;
+    padding: 5px 10px;
+    margin-left: 75px;
+}
+
+/* les-carts-photos .carts-photos a div span:hover style*/
+.les-carts-photos .carts-photos a div span:hover {
+    background-color: rgb(73, 109, 183);
+}
+
+/* floteer-heading style*/
+.floteer-heading .floter-heading-div  {
+    text-align: center;
+    margin-top: 80px;
+    padding: 40px 20px;
+    color: rgb(0, 0, 0);
+}
+
+/* floteer-heading div style*/
+.floteer-heading  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(73, 109, 183);
+    color: white;
+    margin: 10px 367px;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+
+/* floteer-heading a:hover style*/
+.floteer-heading  a:hover {
+    background-color: rgb(41, 70, 112);
+}
+
+/* flooter style*/
+.flooter {
+    text-align: center;
+    color: rgb(104, 103, 103);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* flooter a style*/
+.flooter a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(101, 107, 106);
+    
+}
+
+/* hr style*/
+hr {
+    opacity: 0.2;
 }
